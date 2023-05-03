@@ -1,0 +1,138 @@
+.aside {
+  width: 300px;
+  background-color: beige;
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 125px;
+    background: linear-gradient(red, blue);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  ul {
+    padding: 1rem;
+
+    li {
+      margin: 0 0.25em 0.25em 0;
+    }
+  }
+
+  > * {
+    margin-bottom: 2rem;
+  }
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+
+  li {
+    background-color: #4661e6;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .controller {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    background-color: #373e68;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    color: white;
+
+    .post-amount {
+      font-weight: bold;
+      font-size: 1.125rem;
+    }
+
+    button {
+      padding: 0.75rem;
+      border-radius: 0.5em;
+      font-weight: bold;
+      font-size: 0.75rem;
+      background-color: #8a4af3;
+      color: white;
+      margin-left: auto;
+    }
+
+    *:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .posts-container {
+    height: 100%;
+    padding: 0 1rem;
+
+    .post {
+      display: flex;
+      align-items: center;
+      min-height: 90px;
+      padding: 0.5rem;
+
+      .upvotes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 4ch;
+        font-size: 0.8rem;
+        background-color: #f2f5fe;
+        padding: 1em 0.75em;
+        border-radius: 0.5rem;
+      }
+
+      .post-details {
+        margin: 0 1.5rem;
+
+        > *:not(:last-child){
+          margin-bottom: 0.5rem;
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: #3b4276;
+        }
+
+        p {
+          color: #838cab;
+        }
+      }
+
+      .comments-container {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        color: #cdd2ef;
+
+        span {
+          font-weight: bold;
+          color: #3b4276;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .post:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+}
